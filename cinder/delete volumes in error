@@ -1,0 +1,1 @@
+cinder list | awk '/error/ {print($2)}' | xargs cinder delete
